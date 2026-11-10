@@ -132,7 +132,7 @@ test('TEST-9-GREET-A-CAT', async ({ page }) => {
 });
 
 test('TEST-10-GREET-A-CAT-WITH-NAME', async ({ page }) => {
-    await page.goto('http://localhost:8080/Jennyanydots');
+    await page.goto('http://localhost:8080/greet-a-cat/Jennyanydots');
 
     await expect(page.getByText("Meow! from Jennyanydots.")).toBeVisible();
 });
